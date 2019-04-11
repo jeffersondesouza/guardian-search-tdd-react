@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import SearchForm from '../../components/SearchForm';
 import SearchResults from '../../components/SearchResults';
+
+import fetchArticles from './../../api';
 
 const articles = [
   { webUrl: '/', webTitle: 'materia 1' },
@@ -11,15 +14,27 @@ const articles = [
 ]
 
 const SearchContainer = () => {
+
+  const [state, setState] = useState({ articles: [] })
+
   const handleSearch = ({ value }) => {
-    console.log('value:', value)
+
+    fetchArticles(value)
+      .then(data => data.response.results)
+      .then(articles => {
+        console.log('articles:', articles)
+        setState({
+          ...state,
+          articles
+        });
+      })
 
   }
 
   return (
     <section>
       <SearchForm onSearch={handleSearch} />
-      <SearchResults articles={articles} />
+      <SearchResults articles={state.articles} />
     </section>
   );
 }

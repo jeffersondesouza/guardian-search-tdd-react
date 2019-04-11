@@ -1,13 +1,9 @@
 import React from 'react';
+import Article from './Article';
 
 const SearchResults = ({ articles = [] }) => (
   <ul>
-    {
-      articles.map((article, i) => <li>
-        <a href={article.webUrl} className="App-link">{article.webTitle}</a>
-      </li>
-      )
-    }
+    {articles.map(article => <Article key={article.id} {...article} />)}
   </ul>
 );
 
