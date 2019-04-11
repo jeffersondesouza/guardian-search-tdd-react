@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const SearchForm = () => {
+const SearchForm = ({ onSearch }) => {
   const [state, setState] = useState({ value: '' });
-  
+
   const handleChange = (e) => {
     const value = e.target.value;
     setState({
@@ -11,11 +11,13 @@ const SearchForm = () => {
     })
   }
 
-  const handleSubmit = e =>{
+  const handleSubmit = e => {
     e.preventDefault();
-    console.log(state);
-    
+    if (state.value) {
+      onSearch(state)
+    }
   }
+
   return (
     <div>
       <form onSubmit={handleSubmit}>

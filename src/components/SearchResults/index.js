@@ -1,19 +1,13 @@
 import React from 'react';
 
-const SearchResults = () => (
+const SearchResults = ({ articles = [] }) => (
   <ul>
-    <li>
-      <a href="/" className="App-link">materia 1</a>
-    </li>
-    <li>
-      <a href="/" className="App-link">materia 1</a>
-    </li>
-    <li>
-      <a href="/" className="App-link">materia 1</a>
-    </li>
-    <li>
-      <a href="/" className="App-link">materia 1</a>
-    </li>
+    {
+      articles.map((article, i) => <li>
+        <a href={article.webUrl} className="App-link">{article.webTitle}</a>
+      </li>
+      )
+    }
   </ul>
 );
 
