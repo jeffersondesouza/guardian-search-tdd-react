@@ -20,7 +20,6 @@ const SearchContainer = () => {
   const handleSearch = ({ value }) => {
 
     fetchArticles(value)
-      .then(data => data.response.results)
       .then(articles => {
         console.log('articles:', articles)
         setState({

@@ -2,7 +2,9 @@
 const fetchArticles = event => {
   return fetch(
     `https://content.guardianapis.com/search?q=${event}&api-key=4f0dc017-ba27-4650-ba21-ea7b65fb88c6`
-  ).then(response => response.json());
+  )
+    .then(response => response.json())
+    .then(data => data.response.results);
 };
 
 export default fetchArticles;
