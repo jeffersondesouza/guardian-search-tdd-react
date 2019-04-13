@@ -13,7 +13,7 @@ const SearchForm = ({ onSearch }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    onSearch(state);
+    return onSearch(state);
   };
 
   return (

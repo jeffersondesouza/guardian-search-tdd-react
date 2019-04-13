@@ -15,11 +15,11 @@ describe("Search component", () => {
 
     wrapper = mount(<SearchContainer />);
 
-    wrapper.find("input").simulate("change", {
-      target: { value: "value" }
+    expect(wrapper.state().articles).toHaveLength(0);
+
+    const { onSearch } = wrapper.find(SearchForm).props();
+    return onSearch({ values: 1 }).then(() => {
+      expect(wrapper.state().articles).toHaveLength(10);
     });
-
-
-
   });
 });

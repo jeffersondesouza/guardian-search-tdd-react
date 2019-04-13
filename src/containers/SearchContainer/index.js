@@ -5,23 +5,25 @@ import SearchResults from "../../components/SearchResults";
 
 import fetchArticles from "./../../api";
 
-const SearchContainer = () => {
-  const [state, setState] = useState({ articles: [] });
+class SearchContainer extends React.Component {
+  state = { articles: [] };
 
-  const handleSearch = ({ value }) =>
+  handleSearch = ({ value }) =>
     fetchArticles(value).then(articles => {
-      setState({
-        ...state,
+      this.setState({
+        ...this.state,
         articles
       });
     });
 
-  return (
-    <section>
-      <SearchForm onSearch={handleSearch} />
-      <SearchResults articles={state.articles} />
-    </section>
-  );
-};
+  render() {
+    return (
+      <section>
+        <SearchForm onSearch={this.handleSearch} />
+        <SearchResults articles={this.state.articles} />
+      </section>
+    );
+  }
+}
 
 export default SearchContainer;
