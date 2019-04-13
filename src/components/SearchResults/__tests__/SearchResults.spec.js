@@ -6,15 +6,16 @@ import SearchResult from "../";
 Enzyme.configure({ adapter: new Adapter() });
 
 describe("Search component", () => {
-  
   it("should render 0 articles", () => {
     const wrapper = mount(<SearchResult />);
-    expect(wrapper.find('li')).toHaveLength(0)
+    expect(wrapper.find("li")).toHaveLength(0);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it("should render 5 articles", () => {
     const wrapper = mount(<SearchResult articles={ARTICLES_MOCK} />);
-    expect(wrapper.find('li')).toHaveLength(5)
+    expect(wrapper.find("li")).toHaveLength(5);
+    expect(wrapper).toMatchSnapshot();
   });
 });
 

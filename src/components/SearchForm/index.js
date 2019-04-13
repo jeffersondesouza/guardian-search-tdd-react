@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const SearchForm = ({ onSearch }) => {
-  const [state, setState] = useState({ value: '' });
+  const [state, setState] = useState({ value: "" });
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const value = e.target.value;
     setState({
       ...state,
       value
-    })
-  }
+    });
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (state.value) {
-      onSearch(state)
-    }
-  }
+    onSearch(state);
+  };
 
   return (
     <div>
@@ -28,11 +26,8 @@ const SearchForm = ({ onSearch }) => {
           onChange={handleChange}
         />
       </form>
-      <div className="SearchForm__value">
-        Search: {state.value}
-      </div>
-
+      <div className="SearchForm__value">Search: {state.value}</div>
     </div>
   );
-}
+};
 export default SearchForm;

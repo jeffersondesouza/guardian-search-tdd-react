@@ -1,0 +1,993 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component should render 0 articles 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <SearchResults />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <ul />,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+      },
+      "ref": null,
+      "rendered": Array [
+        Array [],
+      ],
+      "type": "ul",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <ul />,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+        },
+        "ref": null,
+        "rendered": Array [
+          Array [],
+        ],
+        "type": "ul",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Search component should render 5 articles 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <SearchResults
+    articles={
+      Array [
+        Object {
+          "id": "1",
+          "webTitle": "materia 1",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "2",
+          "webTitle": "materia 2",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "3",
+          "webTitle": "materia 3",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "4",
+          "webTitle": "materia 4",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "5",
+          "webTitle": "materia 5",
+          "webUrl": "/",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "articles": Array [
+        Object {
+          "id": "1",
+          "webTitle": "materia 1",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "2",
+          "webTitle": "materia 2",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "3",
+          "webTitle": "materia 3",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "4",
+          "webTitle": "materia 4",
+          "webUrl": "/",
+        },
+        Object {
+          "id": "5",
+          "webTitle": "materia 5",
+          "webUrl": "/",
+        },
+      ],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <ul>
+        <li>
+          <a
+            class="App-link"
+            href="/"
+            target="blank"
+          >
+            materia 1
+          </a>
+        </li>
+        <li>
+          <a
+            class="App-link"
+            href="/"
+            target="blank"
+          >
+            materia 2
+          </a>
+        </li>
+        <li>
+          <a
+            class="App-link"
+            href="/"
+            target="blank"
+          >
+            materia 3
+          </a>
+        </li>
+        <li>
+          <a
+            class="App-link"
+            href="/"
+            target="blank"
+          >
+            materia 4
+          </a>
+        </li>
+        <li>
+          <a
+            class="App-link"
+            href="/"
+            target="blank"
+          >
+            materia 5
+          </a>
+        </li>
+      </ul>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Article
+            id="1"
+            webTitle="materia 1"
+            webUrl="/"
+          />,
+          <Article
+            id="2"
+            webTitle="materia 2"
+            webUrl="/"
+          />,
+          <Article
+            id="3"
+            webTitle="materia 3"
+            webUrl="/"
+          />,
+          <Article
+            id="4"
+            webTitle="materia 4"
+            webUrl="/"
+          />,
+          <Article
+            id="5"
+            webTitle="materia 5"
+            webUrl="/"
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "id": "1",
+            "webTitle": "materia 1",
+            "webUrl": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <li>
+              <a
+                class="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 1
+              </a>
+            </li>,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 1
+              </a>,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 1
+                </a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "materia 1",
+                  "className": "App-link",
+                  "href": "/",
+                  "target": "blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "materia 1",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "li",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "id": "2",
+            "webTitle": "materia 2",
+            "webUrl": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <li>
+              <a
+                class="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 2
+              </a>
+            </li>,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 2
+              </a>,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 2
+                </a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "materia 2",
+                  "className": "App-link",
+                  "href": "/",
+                  "target": "blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "materia 2",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "li",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "id": "3",
+            "webTitle": "materia 3",
+            "webUrl": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <li>
+              <a
+                class="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 3
+              </a>
+            </li>,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 3
+              </a>,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 3
+                </a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "materia 3",
+                  "className": "App-link",
+                  "href": "/",
+                  "target": "blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "materia 3",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "li",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "function",
+          "props": Object {
+            "id": "4",
+            "webTitle": "materia 4",
+            "webUrl": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <li>
+              <a
+                class="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 4
+              </a>
+            </li>,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 4
+              </a>,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 4
+                </a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "materia 4",
+                  "className": "App-link",
+                  "href": "/",
+                  "target": "blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "materia 4",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "li",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "function",
+          "props": Object {
+            "id": "5",
+            "webTitle": "materia 5",
+            "webUrl": "/",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": <li>
+              <a
+                class="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 5
+              </a>
+            </li>,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                className="App-link"
+                href="/"
+                target="blank"
+              >
+                materia 5
+              </a>,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 5
+                </a>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "materia 5",
+                  "className": "App-link",
+                  "href": "/",
+                  "target": "blank",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "materia 5",
+                ],
+                "type": "a",
+              },
+            ],
+            "type": "li",
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "ul",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "articles": Array [
+          Object {
+            "id": "1",
+            "webTitle": "materia 1",
+            "webUrl": "/",
+          },
+          Object {
+            "id": "2",
+            "webTitle": "materia 2",
+            "webUrl": "/",
+          },
+          Object {
+            "id": "3",
+            "webTitle": "materia 3",
+            "webUrl": "/",
+          },
+          Object {
+            "id": "4",
+            "webTitle": "materia 4",
+            "webUrl": "/",
+          },
+          Object {
+            "id": "5",
+            "webTitle": "materia 5",
+            "webUrl": "/",
+          },
+        ],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <ul>
+          <li>
+            <a
+              class="App-link"
+              href="/"
+              target="blank"
+            >
+              materia 1
+            </a>
+          </li>
+          <li>
+            <a
+              class="App-link"
+              href="/"
+              target="blank"
+            >
+              materia 2
+            </a>
+          </li>
+          <li>
+            <a
+              class="App-link"
+              href="/"
+              target="blank"
+            >
+              materia 3
+            </a>
+          </li>
+          <li>
+            <a
+              class="App-link"
+              href="/"
+              target="blank"
+            >
+              materia 4
+            </a>
+          </li>
+          <li>
+            <a
+              class="App-link"
+              href="/"
+              target="blank"
+            >
+              materia 5
+            </a>
+          </li>
+        </ul>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Article
+              id="1"
+              webTitle="materia 1"
+              webUrl="/"
+            />,
+            <Article
+              id="2"
+              webTitle="materia 2"
+              webUrl="/"
+            />,
+            <Article
+              id="3"
+              webTitle="materia 3"
+              webUrl="/"
+            />,
+            <Article
+              id="4"
+              webTitle="materia 4"
+              webUrl="/"
+            />,
+            <Article
+              id="5"
+              webTitle="materia 5"
+              webUrl="/"
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "function",
+            "props": Object {
+              "id": "1",
+              "webTitle": "materia 1",
+              "webUrl": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <li>
+                <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 1
+                </a>
+              </li>,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 1
+                </a>,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="App-link"
+                    href="/"
+                    target="blank"
+                  >
+                    materia 1
+                  </a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "materia 1",
+                    "className": "App-link",
+                    "href": "/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "materia 1",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "function",
+            "props": Object {
+              "id": "2",
+              "webTitle": "materia 2",
+              "webUrl": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <li>
+                <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 2
+                </a>
+              </li>,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 2
+                </a>,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="App-link"
+                    href="/"
+                    target="blank"
+                  >
+                    materia 2
+                  </a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "materia 2",
+                    "className": "App-link",
+                    "href": "/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "materia 2",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "function",
+            "props": Object {
+              "id": "3",
+              "webTitle": "materia 3",
+              "webUrl": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <li>
+                <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 3
+                </a>
+              </li>,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 3
+                </a>,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="App-link"
+                    href="/"
+                    target="blank"
+                  >
+                    materia 3
+                  </a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "materia 3",
+                    "className": "App-link",
+                    "href": "/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "materia 3",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "function",
+            "props": Object {
+              "id": "4",
+              "webTitle": "materia 4",
+              "webUrl": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <li>
+                <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 4
+                </a>
+              </li>,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 4
+                </a>,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="App-link"
+                    href="/"
+                    target="blank"
+                  >
+                    materia 4
+                  </a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "materia 4",
+                    "className": "App-link",
+                    "href": "/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "materia 4",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "function",
+            "props": Object {
+              "id": "5",
+              "webTitle": "materia 5",
+              "webUrl": "/",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": <li>
+                <a
+                  class="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 5
+                </a>
+              </li>,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  className="App-link"
+                  href="/"
+                  target="blank"
+                >
+                  materia 5
+                </a>,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <a
+                    class="App-link"
+                    href="/"
+                    target="blank"
+                  >
+                    materia 5
+                  </a>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "materia 5",
+                    "className": "App-link",
+                    "href": "/",
+                    "target": "blank",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "materia 5",
+                  ],
+                  "type": "a",
+                },
+              ],
+              "type": "li",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "ul",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
