@@ -28,8 +28,8 @@ const SearchForm = ({ onSearch }) => {
           onChange={handleChange}
         />
       </form>
-      <div>
-        {JSON.stringify(state, null, 2)}
+      <div className="SearchForm__value">
+        Search: {state.value}
       </div>
 
     </div>

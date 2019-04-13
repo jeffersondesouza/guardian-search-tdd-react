@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Based on [this article](https://blog.bitsrc.io/how-to-test-react-components-using-jest-and-enzyme-fab851a43875).
 
 ## Available Scripts
 

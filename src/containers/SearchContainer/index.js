@@ -5,14 +5,6 @@ import SearchResults from '../../components/SearchResults';
 
 import fetchArticles from './../../api';
 
-const articles = [
-  { webUrl: '/', webTitle: 'materia 1' },
-  { webUrl: '/', webTitle: 'materia 2' },
-  { webUrl: '/', webTitle: 'materia 3' },
-  { webUrl: '/', webTitle: 'materia 4' },
-  { webUrl: '/', webTitle: 'materia 5' },
-]
-
 const SearchContainer = () => {
 
   const [state, setState] = useState({ articles: [] })

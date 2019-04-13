@@ -11,6 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:v": "react-scripts test --verbose",
+    "test:c": "react-scripts test --verbose --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -24,6 +26,7 @@
   ],
   "devDependencies": {
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1"
+    "enzyme-adapter-react-16": "1.11.2",
+    "react-test-renderer": "16.8.6"
   }
 }
